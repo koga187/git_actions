@@ -32,7 +32,7 @@ jobs:
         # Showcase the most minimal configuration possible
       - name: "Minimal Configuration"
         id: minimal_release
-        uses: ./
+        uses: mikepenz/release-changelog-builder-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
@@ -44,7 +44,7 @@ jobs:
         # Showcases a more complex configuration, providing a configuration, and specifically referencing owner, repo, from and to tag
       - name: "Complex Configuration"
         id: complex_release
-        uses: ./
+        uses: mikepenz/release-changelog-builder-action@v2
         with:
           configuration: ".github/workflows/changelog_configuration/configuration_complex.json"
           owner: "mikepenz"
@@ -61,7 +61,7 @@ jobs:
         # Showcases the capability to generate the changelog for an external repository provided
       - name: "External Repo Configuration"
         id: external_changelog
-        uses: ./
+        uses: mikepenz/release-changelog-builder-action@v2
         with:
           configuration: ".github/workflows/changelog_configuration/configuration_complex.json"
           owner: "mikepenz"
