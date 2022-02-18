@@ -2,15 +2,19 @@
     "categories": [
         {
             "title": "## 🚀 Features",
-            "labels": ["feature"]
+            "labels": ["feature", "Type: Feature"]
         },
         {
             "title": "## 🐛 Fixes",
-            "labels": ["fix"]
+            "labels": ["fix", "Type: Bug"]
         },
         {
             "title": "## 🧪 Tests",
             "labels": ["test"]
+        },
+        {
+            "title": "## 🔥 Enhancement",
+            "labels": ["Type: Enhancement"]
         }
     ],
     "sort": "ASC",
