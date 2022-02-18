@@ -1,6 +1,6 @@
 # !bin/bash
 
-for FEATURE_NUMBER in {21..25}
+for FEATURE_NUMBER in {26..30}
 do
     git checkout -b feature/$FEATURE_NUMBER
     touch $FEATURE_NUMBER.txt
