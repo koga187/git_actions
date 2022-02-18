@@ -11,7 +11,8 @@ jobs:
       - name: "Build Changelog"
         id: github_release
         uses: mikepenz/release-changelog-builder-action@v2
-        configuration: ".github/workflows/changelog_configuration/configuration_complex.json"
+        with:
+          configuration: ".github/workflows/changelog_configuration/configuration_complex.json"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create Release
