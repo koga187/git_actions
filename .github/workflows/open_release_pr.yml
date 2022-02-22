@@ -1,4 +1,4 @@
-name: Update AUTHORS
+name: Open PR to main branch when a new release/hotfix branch is pushed
 on:
   push:
     branches:
