@@ -1,6 +1,6 @@
 name: Update AUTHORS
 on:
-  create:
+  push:
     branches:
       - feature/**
       - bugfix/**
@@ -16,12 +16,13 @@ jobs:
       - name: Open Draft PR to develop when a new feature/bugfix branch is pushed.
         run: |
           git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
+          export AUTHOR=$(git log --format='%aN <%aE>%n%cN <%cE>' | sort -u)
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           base: develop
           # commit-message: update authors
-          title: Update $AUTHORS
+          title: Update $AUTHORS $AUTHOR AUTHORS AUTHOR
           # body: Credit new contributors by updating AUTHORS
           # branch: update-authors
           # reviewers: [GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira, devs-oneapp]
