@@ -19,8 +19,9 @@ jobs:
         with:
           base: develop
           # commit-message: update authors
-          # title: Update AUTHORS
+          title: Update $AUTHORS AUTHORS
           # body: Credit new contributors by updating AUTHORS
           # branch: update-authors
           # reviewers: [GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira, devs-oneapp]
           draft: true
+          labels: feature, fix, test
