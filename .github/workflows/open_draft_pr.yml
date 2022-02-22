@@ -13,7 +13,7 @@ jobs:
           fetch-depth: 0
       - name: Open Draft PR to develop when a new feature/bugfix branch is pushed.
         run: |
-          git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
+          git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS \
           export AUTHOR=$(git log --format='%aN <%aE>%n%cN <%cE>' | sort -u)
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
