@@ -7,19 +7,33 @@ on:
       - release/**
 
 jobs:
-  updateAuthors:
+  createAPRToMainFromReleaseOrHotfix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Update AUTHORS
-        run: |
-          git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
-      - name: Create Pull Request
+
+      - name: Checking out code
+        uses: actions/checkout@v2
+
+      - name: Extract git commit data
+        uses: rlespinasse/git-commit-data-action@v1
+
+      - name: Update Author information
+        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
+      - name: Raise a PR
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: update authors
-          title: Update AUTHORS
-          body: Credit new contributors by updating AUTHORS
-          branch: develop
+          base: main
+          branch: ${{ steps.extract_branch.outputs.branch }}
+          title: "${{ steps.extract_branch.outputs.branch }}"
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          body:
+            This is to show automatic PR creation complete de description.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
