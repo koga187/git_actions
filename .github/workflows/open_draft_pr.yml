@@ -17,6 +17,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           # commit-message: update authors
           title: Draft PR Created By Action AUTHORS
           # body: Credit new contributors by updating AUTHORS
