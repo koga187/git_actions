@@ -19,8 +19,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           # commit-message: update authors
-          title: Draft PR Created By Action AUTHORS
-          # body: Credit new contributors by updating AUTHORS
+          title: Draft PR Created By Action ${AUTHORS}
+          body: Credit new contributors by updating $AUTHORS
           # branch: update-authors
           # reviewers: GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira
           draft: true
