@@ -10,13 +10,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-      - name: Get the Author name
-        run: |
-          git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS \
-          echo "$AUTHORS" \
-          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}" \ 
-          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}" \ 
+      #     fetch-depth: 0
+      # - name: Get the Author name
+      #   run: |
+      #     git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS \
+      #     echo "$AUTHORS" \
+      #     echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}" \ 
+      #     echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}" \ 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         # with:
