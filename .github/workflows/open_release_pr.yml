@@ -1,9 +1,11 @@
-name: Open PR to main branch when a new release/hotfix branch is pushed
+name: 'Open PR to main branch when a new release/hotfix branch is pushed'
+
 on:
   push:
     branches:
       - hotfix/**
       - release/**
+
 jobs:
   updateAuthors:
     runs-on: ubuntu-latest
