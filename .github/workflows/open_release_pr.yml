@@ -28,6 +28,7 @@ jobs:
       - name: Raise a PR
         uses: peter-evans/create-pull-request@v3
         with:
+          base: main
           branch: ${{ steps.extract_branch.outputs.branch }}
           title: "${{ steps.extract_branch.outputs.branch }}"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
