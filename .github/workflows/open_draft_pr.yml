@@ -23,10 +23,6 @@ jobs:
           # branch: update-authors
           # reviewers: GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira
           draft: true
-<<<<<<< Updated upstream
-          labels: feature, fix, test
-=======
           # labels: feature, fix, test
           # delete-branch: true
           # signoff: true
->>>>>>> Stashed changes
