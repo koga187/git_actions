@@ -1,5 +1,8 @@
 on:
   push:
+    branches:
+      - 'bugfix/**'
+      - 'feaure/**'
   create:
   - name: Create Pull Request
     id: cpr
