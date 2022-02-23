@@ -33,5 +33,4 @@ jobs:
           body:
             This is to show automatic PR creation complete de description.
           token: ${{ secrets.GITHUB_TOKEN }}
-          delete-branch: true
           draft: true
