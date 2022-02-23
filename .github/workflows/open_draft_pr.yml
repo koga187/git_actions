@@ -1,5 +1,4 @@
 name: Open Draft PR to develop when a new feature/bugfix branch is pushed.
-id: cpr
 on:
   push:
     branches:
@@ -20,7 +19,7 @@ jobs:
           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
-        with:
+        # with:
           # token: ${{ secrets.GITHUB_TOKEN }}
           # commit-message: update authors
           # title: Draft PR Created By Action ${AUTHORS}
