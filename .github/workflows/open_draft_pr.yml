@@ -1,12 +1,18 @@
-- name: Create Pull Request
-  id: cpr
-  on:
+on:
   push:
-    branches:
-      - feature/**
-      - bugfix/**
-  uses: peter-evans/create-pull-request@v3
-- name: Check outputs
-  run: |
-    echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
-    echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+  create:
+  - name: Create Pull Request
+    id: cpr
+    on:
+    push:
+      branches:
+        - feature/**
+        - bugfix/**
+    uses: peter-evans/create-pull-request@v3
+  - name: Check outputs
+    run: |
+      echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+      echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+    with:
+      base: ${{ github.head_ref }}
+
