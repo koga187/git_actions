@@ -1,32 +1,7 @@
-name: Open Draft PR to develop when a new feature/bugfix branch is pushed.
-on:
-  push:
-    branches:
-      - feature/**
-      - bugfix/**
-jobs:
-  updateAuthors:
-    runs-on: ubuntu-latest
-    steps:
-      # - uses: actions/checkout@v2
-      #   with:
-      #     fetch-depth: 0
-      # - name: Get the Author name
-      #   run: |
-      #     git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS \
-      #     echo "$AUTHORS" \
-      #     echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}" \ 
-      #     echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}" \ 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          # commit-message: update authors
-          # title: Draft PR Created By Action ${AUTHORS}
-          # body: Credit new contributors by updating $AUTHORS
-          # branch: update-authors
-          # reviewers: GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira
-          # draft: true
-          # labels: feature, fix, test
-          # delete-branch: true
-          # signoff: true
+      - name: Check outputs
+        run: |
+          echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
