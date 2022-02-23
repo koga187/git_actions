@@ -14,7 +14,7 @@ jobs:
       - name: Get the Author name
         run: |
           git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
-          echo "${{ AUTHORS }}"
+          echo "$AUTHORS"
           echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
           echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
       - name: Create Pull Request
