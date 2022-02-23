@@ -1,11 +1,9 @@
 name: 'Create a Draft PR to develop from feature or bugfix'
-
 on:
   push:
     branches:
       - bugfix/**
       - feature/**
-
 jobs:
   createADraftPRToDevelopFromFeatureOrBugfix:
     runs-on: ubuntu-latest
