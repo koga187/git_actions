@@ -1,4 +1,5 @@
 name: Create a Draft PR to develop from feature or bugfix
+
 on:
   push:
     branches:
@@ -17,7 +18,7 @@ jobs:
       - name: Update Author information
         run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
     
-      - name: Raise Draft PR``
+      - name: Raise Draft PR
         uses: peter-evans/create-pull-request@v3
         with:
           branch: "auto-pr-branch"
@@ -29,5 +30,3 @@ jobs:
             This is to show automatic PR creation
           token: ${{ secrets.GITHUB_TOKEN }}
           delete-branch: true
-s
-
