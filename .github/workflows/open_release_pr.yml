@@ -16,10 +16,16 @@ jobs:
       - name: Update AUTHORS
         run: |
           git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
-      - name: Create Pull Request
+      
+      - name: Raise Draft PR
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: update authors
-          title: Update AUTHORS
-          body: Credit new contributors by updating AUTHORS
-          branch: develop
+          branch: ${{ steps.extract_branch.outputs.branch }}
+          base: main
+          title: "${{ steps.extract_branch.outputs.branch }}"
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          body:
+            This is to show automatic PR creation complete de description.
+          token: ${{ secrets.GITHUB_TOKEN }}
+
