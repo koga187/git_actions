@@ -22,6 +22,6 @@ jobs:
           title: Update $AUTHORS AUTHORS
           # body: Credit new contributors by updating AUTHORS
           # branch: update-authors
-          # reviewers: [GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira, devs-oneapp]
+          reviewers: [GustavoDuregger, 4rthurmonteiro, lstonussi, atrope, koga187, nferreira]
           draft: true
           labels: feature, fix, test
