@@ -1,8 +1,8 @@
 ---
-name: Custom issue template
-about: Describe this issue template's purpose here.
-title: ''
-labels: ''
+name: Nova tarefa
+about: Informe uma tarefa a ser executada no projeto
+title: "[Task] Descreva o titulo aqui"
+labels: 'Status: New, Type: Task, Priority: Very low, '
 assignees: ''
 
 ---
@@ -18,13 +18,3 @@ Uma descrição clara e concisa de quaisquer soluções ou recursos alternativos
 
 ** Contexto adicional **
 Adicione qualquer outro contexto ou capturas de tela sobre a solicitação de recurso aqui.
-
-
-## checks
-
-  [Doc labels](https://github.com/SuaMusica/OneApp/wiki/Labels)
-
-- [ ] Conferir labels (type, priority, OKR, status)
-- [ ] Adicionar projeto (OneApp)
-- [ ] Vincular a issue ao PR
-- [ ] Vincular Milestone
