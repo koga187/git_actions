@@ -1,39 +1,38 @@
+---
+name: Bug report
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
 
-**Descreva o problema**
-Uma descrição clara e concisa do que é o bug.
+---
 
-**Reproduzir**
-Passos para reproduzir o comportamento:
-1. Vá até '...'
-2. Clique em '....'
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Comportamento esperado**
-Uma descrição clara e concisa do que você esperava que acontecesse.
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
 **Screenshots**
-Se aplicável, adicione capturas de tela para ajudar a explicar seu problema.
+If applicable, add screenshots to help explain your problem.
 
-**Desktop (preencha as seguintes informações):**
+**Desktop (please complete the following information):**
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
 
-**Smartphone (reencha as seguintes informações):**
+**Smartphone (please complete the following information):**
  - Device: [e.g. iPhone6]
  - OS: [e.g. iOS8.1]
  - Browser [e.g. stock browser, safari]
  - Version [e.g. 22]
 
-**Informações adicionais**
-Adicione qualquer outro contexto sobre o problema aqui.
-
-
-## checks
-
-  [Doc labels](https://github.com/SuaMusica/OneApp/wiki/Labels)
-
-- [ ] Conferir labels (type, priority, OKR, status)
-- [ ] Adicionar projeto (OneApp)
-- [ ] Vincular a issue ao PR
-- [ ] Vincular Milestone
-
+**Additional context**
+Add any other context about the problem here.
