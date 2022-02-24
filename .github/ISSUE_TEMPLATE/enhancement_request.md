@@ -1,3 +1,12 @@
+---
+name: Requisição de melhoria
+about: Descreva a melhoria seguindo os passos do template.
+title: 'Coloque o nome da Funcionalidade e uma breve descrição da melhoria e onde ela sera aplicada.'
+labels: 'Type: Enhancement, Status: New, Priority: Very low, OKR - Sua Musica VS Ferrari'
+assignees: ''
+
+---
+
 
 **Descrição da melhoria:**
 Descreva a melhoria e suas caracteristicas mais importantes

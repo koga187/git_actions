@@ -2,7 +2,7 @@
 name: Reportar bug
 about: Reporte um bug e ajude-nos a melhorar
 title: "[Bug] Descreva o titulo aqui"
-labels: 'Type: Bug, Status: New, Priority: Very low'
+labels: 'Type: Bug, Status: New, Priority: Very low, OKR - Sua Musica VS Ferrari'
 assignees: ''
 
 ---

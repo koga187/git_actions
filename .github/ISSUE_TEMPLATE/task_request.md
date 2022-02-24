@@ -1,3 +1,11 @@
+---
+name: Custom issue template
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
 
 ** Sua tarefa está relacionada a um problema? Por favor descreva.**
 Uma descrição clara e concisa de qual é o problema. Ex. Sempre fico frustrado quando [...]
