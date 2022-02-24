@@ -1,11 +1,3 @@
----
-name: Requisição de melhoria
-about: Peça uma melhoria para esse projeto
-title: "[Enhancement] Descreva o titulo aqui"
-labels: 'Type: Enhancement, Status: New, Priority: Very low'
-assignees: ''
-
----
 
 **Descrição da melhoria:**
 Descreva a melhoria e suas caracteristicas mais importantes
@@ -21,3 +13,13 @@ Se aplicavel, adicione uma imagem que ajude no entendimento da melhoria
 
 **Contexto adicional:**
 Adicione qualquer informação adicional que achar necessaria
+
+
+## checks
+
+  [Doc labels](https://github.com/SuaMusica/OneApp/wiki/Labels)
+
+- [ ] Conferir labels (type, priority, OKR, status)
+- [ ] Adicionar projeto (OneApp)
+- [ ] Vincular a issue ao PR
+- [ ] Vincular Milestone

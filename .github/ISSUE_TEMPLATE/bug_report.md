@@ -1,11 +1,3 @@
----
-name: Reportar bug
-about: Reporte um bug e ajude-nos a melhorar
-title: "[Bug] Descreva o titulo aqui"
-labels: 'Type: Bug, Status: New, Priority: Very low'
-assignees: ''
-
----
 
 **Descreva o problema**
 Uma descrição clara e concisa do que é o bug.
@@ -34,3 +26,14 @@ Se aplicável, adicione capturas de tela para ajudar a explicar seu problema.
 
 **Informações adicionais**
 Adicione qualquer outro contexto sobre o problema aqui.
+
+
+## checks
+
+  [Doc labels](https://github.com/SuaMusica/OneApp/wiki/Labels)
+
+- [ ] Conferir labels (type, priority, OKR, status)
+- [ ] Adicionar projeto (OneApp)
+- [ ] Vincular a issue ao PR
+- [ ] Vincular Milestone
+

@@ -1,11 +1,3 @@
----
-name: Requisição de recurso
-about: Sugira um novo recurso para este projeto
-title: "[Feature] Descreva o titulo aqui"
-labels: 'Type: Feature, Status: New, Priority: Very low'
-assignees: ''
-
----
 
 ** Sua solicitação de recurso está relacionada a um problema? Por favor descreva.**
 Uma descrição clara e concisa de qual é o problema. Ex. Sempre fico frustrado quando [...]
@@ -18,3 +10,13 @@ Uma descrição clara e concisa de quaisquer soluções ou recursos alternativos
 
 ** Contexto adicional **
 Adicione qualquer outro contexto ou capturas de tela sobre a solicitação de recurso aqui.
+
+
+## checks
+
+  [Doc labels](https://github.com/SuaMusica/OneApp/wiki/Labels)
+
+- [ ] Conferir labels (type, priority, OKR, status)
+- [ ] Adicionar projeto (OneApp)
+- [ ] Vincular a issue ao PR
+- [ ] Vincular Milestone
